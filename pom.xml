@@ -61,6 +61,7 @@
                     <checkModificationExcludes>
                         <checkModificationExclude>pom.xml</checkModificationExclude>
                     </checkModificationExcludes>
+                    <pushChanges>false</pushChanges>
                 </configuration>
             </plugin>
         </plugins>
@@ -68,6 +69,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:Milos830/milos-pet-clinic.git</developerConnection>
+        <tag>HEAD</tag>
     </scm>
 
 </project>
