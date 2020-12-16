@@ -1,4 +1,4 @@
-package milos.springframework.milospetclinic;
+package milospetclinic;
 
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
