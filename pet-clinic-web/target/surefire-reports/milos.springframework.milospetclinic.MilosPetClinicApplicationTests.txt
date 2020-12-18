@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: milos.springframework.milospetclinic.MilosPetClinicApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.92 s - in milos.springframework.milospetclinic.MilosPetClinicApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.75 s - in milos.springframework.milospetclinic.MilosPetClinicApplicationTests
