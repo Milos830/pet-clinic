@@ -1,8 +1,10 @@
 package milos.springframework.milospetclinic.services;
+import milos.springframework.milospetclinic.model.Vet;
+
 import java.util.Set;
 
 
-public interface Vet {
+public interface VetService {
 
     Vet findById(Long id);
     Vet save(Vet vet);
