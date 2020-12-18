@@ -4,7 +4,7 @@
 
     <groupId>milos.springframework</groupId>
     <artifactId>milos-pet-clinic</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
 
         <modules>
         <module>pet-clinic-data</module>
@@ -58,7 +58,10 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
-
+                    <checkModificationExcludes>
+                        <checkModificationExclude>pom.xml</checkModificationExclude>
+                    </checkModificationExcludes>
+                    <pushChanges>false</pushChanges>
                 </configuration>
             </plugin>
         </plugins>
