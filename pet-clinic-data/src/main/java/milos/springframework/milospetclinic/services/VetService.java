@@ -1,6 +1,8 @@
 package milos.springframework.milospetclinic.services;
 
-public interface VetService extends CrudService {
+import milos.springframework.milospetclinic.model.Vet;
+
+public interface VetService extends CrudService<Vet, Long> {
 
 
 }

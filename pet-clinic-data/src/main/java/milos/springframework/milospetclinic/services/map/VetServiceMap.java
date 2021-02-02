@@ -1,11 +1,11 @@
 package milos.springframework.milospetclinic.services.map;
 
 import milos.springframework.milospetclinic.model.Vet;
-import milos.springframework.milospetclinic.services.CrudService;
+import milos.springframework.milospetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VerServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
