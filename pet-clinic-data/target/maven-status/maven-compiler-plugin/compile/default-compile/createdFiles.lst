@@ -1,5 +1,14 @@
-milos\springframework\milospetclinic\model\Owner.class
+milos\springframework\milospetclinic\services\OwnerService.class
 milos\springframework\milospetclinic\model\PetType.class
+milos\springframework\milospetclinic\services\VetService.class
+milos\springframework\milospetclinic\services\map\OwnerServiceMap.class
 milos\springframework\milospetclinic\model\Pet.class
 milos\springframework\milospetclinic\model\Vet.class
 milos\springframework\milospetclinic\model\Person.class
+milos\springframework\milospetclinic\model\Owner.class
+milos\springframework\milospetclinic\model\BaseEntity.class
+milos\springframework\milospetclinic\services\PetService.class
+milos\springframework\milospetclinic\services\CrudService.class
+milos\springframework\milospetclinic\services\map\AbstractMapService.class
+milos\springframework\milospetclinic\services\map\PetServiceMap.class
+milos\springframework\milospetclinic\services\map\VetServiceMap.class

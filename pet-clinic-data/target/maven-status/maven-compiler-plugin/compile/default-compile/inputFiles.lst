@@ -1,5 +1,14 @@
-C:\Users\miliv\milos-pet-clinic\pet-clinic-data\src\main\java\milos\springframework\milospetclinic\model\Pet.java
+C:\Users\miliv\milos-pet-clinic\pet-clinic-data\src\main\java\milos\springframework\milospetclinic\services\PetService.java
+C:\Users\miliv\milos-pet-clinic\pet-clinic-data\src\main\java\milos\springframework\milospetclinic\services\map\PetServiceMap.java
 C:\Users\miliv\milos-pet-clinic\pet-clinic-data\src\main\java\milos\springframework\milospetclinic\model\Vet.java
+C:\Users\miliv\milos-pet-clinic\pet-clinic-data\src\main\java\milos\springframework\milospetclinic\services\VetService.java
+C:\Users\miliv\milos-pet-clinic\pet-clinic-data\src\main\java\milos\springframework\milospetclinic\model\Pet.java
+C:\Users\miliv\milos-pet-clinic\pet-clinic-data\src\main\java\milos\springframework\milospetclinic\model\BaseEntity.java
+C:\Users\miliv\milos-pet-clinic\pet-clinic-data\src\main\java\milos\springframework\milospetclinic\services\map\VetServiceMap.java
+C:\Users\miliv\milos-pet-clinic\pet-clinic-data\src\main\java\milos\springframework\milospetclinic\services\map\AbstractMapService.java
+C:\Users\miliv\milos-pet-clinic\pet-clinic-data\src\main\java\milos\springframework\milospetclinic\services\CrudService.java
 C:\Users\miliv\milos-pet-clinic\pet-clinic-data\src\main\java\milos\springframework\milospetclinic\model\Owner.java
+C:\Users\miliv\milos-pet-clinic\pet-clinic-data\src\main\java\milos\springframework\milospetclinic\services\OwnerService.java
+C:\Users\miliv\milos-pet-clinic\pet-clinic-data\src\main\java\milos\springframework\milospetclinic\services\map\OwnerServiceMap.java
 C:\Users\miliv\milos-pet-clinic\pet-clinic-data\src\main\java\milos\springframework\milospetclinic\model\PetType.java
 C:\Users\miliv\milos-pet-clinic\pet-clinic-data\src\main\java\milos\springframework\milospetclinic\model\Person.java
