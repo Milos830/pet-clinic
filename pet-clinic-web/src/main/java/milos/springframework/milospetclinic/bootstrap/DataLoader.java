@@ -1,6 +1,7 @@
 package milos.springframework.milospetclinic.bootstrap;
 
 import milos.springframework.milospetclinic.model.Owner;
+import milos.springframework.milospetclinic.model.Pet;
 import milos.springframework.milospetclinic.model.PetType;
 import milos.springframework.milospetclinic.model.Vet;
 import milos.springframework.milospetclinic.services.OwnerService;
@@ -8,6 +9,8 @@ import milos.springframework.milospetclinic.services.PetTypeService;
 import milos.springframework.milospetclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
+import java.time.LocalDate;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -39,13 +42,32 @@ public class DataLoader implements CommandLineRunner {
 
         owner1.setFirstName("Milos");
         owner1.setLastName("Milivojevic");
+        owner1.setAddress("Dragojevac bb");
+        owner1.setCity("Arilje");
+        owner1.setTelephone("424213213");
 
+        Pet milosevPet = new Pet();
+        milosevPet.setPetType(savedDogPetType);
+        milosevPet.setOwner(owner1);
+        milosevPet.setBirthDate(LocalDate.now());
+        milosevPet.setName("Todor");
+        owner1.getPets().add(milosevPet);
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
 
         owner2.setFirstName("Aleksandra");
         owner2.setLastName("Milivojevic");
+        owner2.setAddress("Jasna Poljana 2B");
+        owner2.setCity("Arilje");
+        owner2.setTelephone("434234235555");
+
+        Pet aleksandrinPet = new Pet();
+        aleksandrinPet.setPetType(savedCatPetType);
+        aleksandrinPet.setOwner(owner2);
+        aleksandrinPet.setBirthDate(LocalDate.now());
+        aleksandrinPet.setName("Macka");
+        owner2.getPets().add(aleksandrinPet);
         ownerService.save(owner2);
 
         System.out.println("Loading Owners ....");
