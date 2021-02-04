@@ -2,9 +2,11 @@ package milos.springframework.milospetclinic.services.map;
 
 import milos.springframework.milospetclinic.model.Speciality;
 import milos.springframework.milospetclinic.services.SpecialityService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialityService {
     @Override
     public Set<Speciality> findAll() {
