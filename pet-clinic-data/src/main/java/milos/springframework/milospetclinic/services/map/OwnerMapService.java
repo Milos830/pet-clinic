@@ -5,10 +5,12 @@ import milos.springframework.milospetclinic.model.Pet;
 import milos.springframework.milospetclinic.services.OwnerService;
 import milos.springframework.milospetclinic.services.PetService;
 import milos.springframework.milospetclinic.services.PetTypeService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 @Service
+@Profile({"default", "map"})
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     private final PetTypeService petTypeService;

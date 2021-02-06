@@ -2,10 +2,12 @@ package milos.springframework.milospetclinic.services.map;
 
 import milos.springframework.milospetclinic.model.Pet;
 import milos.springframework.milospetclinic.services.PetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 @Service
+@Profile({"default", "map"})
 public class PetMapService extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
