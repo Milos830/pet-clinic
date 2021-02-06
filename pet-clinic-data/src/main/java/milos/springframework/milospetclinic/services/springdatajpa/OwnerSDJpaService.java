@@ -2,8 +2,6 @@ package milos.springframework.milospetclinic.services.springdatajpa;
 
 import milos.springframework.milospetclinic.model.Owner;
 import milos.springframework.milospetclinic.repositories.OwnerRepository;
-import milos.springframework.milospetclinic.repositories.PetRepository;
-import milos.springframework.milospetclinic.repositories.PetTypeRepository;
 import milos.springframework.milospetclinic.services.OwnerService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
@@ -16,14 +14,8 @@ import java.util.Set;
 public class OwnerSDJpaService implements OwnerService {
 
     private final OwnerRepository ownerRepository;
-    private final PetRepository petRepository;
-    private final PetTypeRepository petTypeRepository;
-
-    public OwnerSDJpaService(OwnerRepository ownerRepository, PetRepository petRepository,
-                             PetTypeRepository petTypeRepository) {
+    public OwnerSDJpaService(OwnerRepository ownerRepository) {
         this.ownerRepository = ownerRepository;
-        this.petRepository = petRepository;
-        this.petTypeRepository = petTypeRepository;
     }
 
     @Override
