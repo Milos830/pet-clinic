@@ -1,10 +1,7 @@
 package milos.springframework.milospetclinic.bootstrap;
 
 import milos.springframework.milospetclinic.model.*;
-import milos.springframework.milospetclinic.services.OwnerService;
-import milos.springframework.milospetclinic.services.PetTypeService;
-import milos.springframework.milospetclinic.services.SpecialityService;
-import milos.springframework.milospetclinic.services.VetService;
+import milos.springframework.milospetclinic.services.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -17,13 +14,15 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialityService specialityService;
+    private final VisitService visitService;
 
     public DataLoader(OwnerService ownerService, VetService vetService,
-                      PetTypeService petTypeService, SpecialityService specialityService) {
+                      PetTypeService petTypeService, SpecialityService specialityService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialityService = specialityService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -88,7 +87,16 @@ public class DataLoader implements CommandLineRunner {
         owner2.getPets().add(aleksandrinPet);
         ownerService.save(owner2);
 
+
         System.out.println("Loading Owners ....");
+
+        Visit catVisit = new Visit();
+        catVisit.setPet(aleksandrinPet);
+        catVisit.setDate(LocalDate.now());
+        catVisit.setDescription("Sneezy Kitty");
+
+        visitService.save(catVisit);
+        System.out.println("Loading Visits ....");
 
         Vet vet1 = new Vet();
 
