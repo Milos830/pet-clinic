@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 
+
 @Component
 public class DataLoader implements CommandLineRunner {
 
@@ -62,6 +63,8 @@ public class DataLoader implements CommandLineRunner {
         owner1.setAddress("Dragojevac bb");
         owner1.setCity("Arilje");
         owner1.setTelephone("424213213");
+
+
 
         Pet milosevPet = new Pet();
         milosevPet.setPetType(savedDogPetType);
