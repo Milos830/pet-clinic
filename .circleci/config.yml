@@ -7,7 +7,3 @@ workflows:
   maven_test:
     jobs:
       - maven/test # checkout, build, test, and upload test results
-      - docker:
-          - image: circleci/<language>:<version TAG>
-          parallelism: 4
-      - run: mvn install -DskipTests
