@@ -26,6 +26,9 @@
     <properties>
         <java.version>11</java.version>
        <project.scm.id>git_scm_id</project.scm.id>
+        <jaxb.version>2.3.0</jaxb.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
 
     <dependencies>
