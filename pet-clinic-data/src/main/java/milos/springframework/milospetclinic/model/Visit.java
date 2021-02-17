@@ -20,7 +20,7 @@ public class Visit extends BaseEntity {
     @Column(name ="description")
     private String description;
 
-    @ManyToOne // visit is going to have single pet
+    @ManyToOne // visit is going to have single pet ......
     @JoinColumn(name = "pet_id")
     private Pet pet;
 
