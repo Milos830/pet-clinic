@@ -100,7 +100,7 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:Milos830/milos-pet-clinic.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:Milos830/pet-clinic.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
