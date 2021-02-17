@@ -20,8 +20,7 @@ jobs:
     steps:
       - checkout
       - run: ./mvnw -Dmaven.test.skip=true package
-               - store_test_results:
-               path: test-results
+
 
 
 workflows:
@@ -31,5 +30,7 @@ workflows:
     jobs:
       - build
       - test:
+          - store_test_results:
+              path: test-results
           requires:
             - build
