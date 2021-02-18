@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: milos.springframework.milospetclinic.controller.OwnerControllerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.207 s - in milos.springframework.milospetclinic.controller.OwnerControllerTest
