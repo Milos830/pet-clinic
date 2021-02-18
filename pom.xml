@@ -29,6 +29,7 @@
         <jaxb.version>2.3.0</jaxb.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <start-class>C:\Users\miliv\milos-pet-clinic\pet-clinic-web\src\main\java\milos\springframework\milospetclinic\MilosPetClinicApplication.java</start-class>
     </properties>
 
     <dependencies>
